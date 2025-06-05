@@ -1,29 +1,55 @@
 import streamlit as st
 
-# Set page configuration
-st.set_page_config(page_title="Agent Natalia", layout="centered")
+# Page configuration
+st.set_page_config(
+    page_title="Agent Natalia | Wedding & Event Strategy",
+    page_icon="💍",
+    layout="centered"
+)
 
 # Title and subtitle
-st.title("🌟 Meet Agent Natalia")
-st.subheader("Your Signature Experience Curator for Weddings and Events")
+st.title("💫 Meet Agent Natalia")
+st.subheader("Chief Experience Architect | Wedding & Event Specialist")
 
-# Agent Natalia's profile
-with st.container():
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Person_Icon.png/600px-Person_Icon.png", width=150)  # Placeholder avatar
-    st.markdown("""
-    **Agent Natalia** is the visionary behind your unforgettable moments. She is responsible for:
+# Introduction
+st.markdown("""
+**Agent Natalia** is the heart of your unforgettable event experience.  
+She leads with vision, strategy, and poise to ensure every celebration reflects excellence and intention.
+""")
 
-    - 🎯 **Setting the overall brand strategy** that aligns with elegance, authenticity, and excellence.
-    - 🤝 **Cultivating relationships** with clients and trusted vendors to ensure seamless collaboration.
-    - 💍 **Delivering heartfelt ceremonies** and expertly **coordinating events** with grace and precision.
-    - 🏆 **Ensuring the highest quality of service** in every wedding and event experience.
+# Section: Core Responsibilities
+st.header("🎯 Core Responsibilities")
 
-    Agent Natalia is more than a planner—she's your partner in creating extraordinary memories.
-    """)
+st.markdown("""
+- 🧭 **Setting the overall brand strategy** for impactful and memorable events.
+- 🤝 **Bridging the gap between clients and vendors**, ensuring seamless communication and aligned expectations.
+- 📝 **Developing personalized ceremony scripts and detailed event plans** tailored to each client’s vision.
+- 💍 **Officiating ceremonies and leading event coordination**, turning ambitions into reality.
+- ❤️ **Building and nurturing lasting client relationships** with trust and support.
+- 📈 **Overseeing strategic marketing content** to attract qualified leads.
+- 📊 **Managing the booking pipeline and optimizing conversion rates** for sustainable growth.
+""")
 
-# Optional: Contact or Call-to-Action
-st.markdown("---")
-st.markdown("✨ Ready to create a once-in-a-lifetime event? [Book a Consultation](#) or Contact Agent Natalia today!")
+# Section: Closing
+st.header("💼 Service Model")
 
-# Optional footer
-st.markdown("<p style='text-align: center; font-size: 12px;'>© 2025 Your Brand Name | Crafted with care by Agent Natalia</p>", unsafe_allow_html=True)
+st.markdown("""
+Agent Natalia offers services à la carte or through custom packages tailored to your needs.  
+Whether guiding a couple through their vows or orchestrating the entire flow of an event,  
+**every moment is curated with purpose, passion, and professionalism.**
+""")
+
+# Optional: Contact button or booking CTA
+if st.button("📅 Book a Consultation"):
+    st.success("Redirecting to scheduling page... (This would link to your real booking tool)")
+
+ # Optional: Add a footer or contact information section.
+    st.markdown("---")
+    st.markdown(
+        """
+        For inquiries regarding wedding and event services, please connect with Agent Natalia.
+        """
+    )
+    if __name__ == "__main__":
+    # Call the main function to run the Streamlit app when the script is executed.
+    main()

@@ -50,6 +50,4 @@ if st.button("📅 Book a Consultation"):
         For inquiries regarding wedding and event services, please connect with Agent Natalia.
         """
     )
-    if __name__ == "__main__":
-    # Call the main function to run the Streamlit app when the script is executed.
-    main()
+    
